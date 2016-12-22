@@ -26,23 +26,23 @@ List of projects from [The Programmers Idea Book](http://www.coderslexicon.com/d
 
 ##Text
 - [ ] CD Key Generator
-- [ ] Check if Palindrome
+- [x] Check if Palindrome
 - [ ] Code Skeleton Creator
-- [ ] Count Vowels
+- [x] Count Vowels
 - [ ] Count Words in a String
 - [ ] Font Viewer and Tester (Online or Not)
 - [ ] Fortune Teller (Horoscope)
 - [ ] Guestbook / Journal
 - [ ] Morse Code Maker
 - [ ] News Ticker and Game Scores
-- [ ] Pig Latin
+- [x] Pig Latin
 - [ ] Post it Notes Program
 - [ ] Quote Tracker (Market Symbols etc)
 - [ ] Random Gift Suggestions
 - [ ] RSS Feed Creator
 - [ ] Recreate Grep (Pattern Matching)
 - [ ] Regex Query Tool
-- [ ] Reverse a String
+- [x] Reverse a String
 - [ ] Text Editor
 - [ ] Text to HTML Generator
 - [ ] Vigenere / Vernam / Caesar Ciphers
