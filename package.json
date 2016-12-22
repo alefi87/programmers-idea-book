@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --reporter spec"
+    "test": "make test",
+    "coverage": "make coverage"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +13,7 @@
     "babel-eslint": "^7.1.1",
     "chai": "^3.5.0",
     "eslint": "^3.12.2",
+    "istanbul": "^0.4.5",
     "mocha": "^3.2.0"
   }
 }

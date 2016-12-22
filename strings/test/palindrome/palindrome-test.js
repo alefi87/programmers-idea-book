@@ -1,7 +1,7 @@
 'use strict';
 
 var expect = require('chai').expect;
-var isPalindrome = require('../palindrome').isPalindrome;
+var isPalindrome = require('../../palindrome').isPalindrome;
 
 describe('Palindrome', ()=>{
 	it('throws TypeError when input is empty', ()=>{

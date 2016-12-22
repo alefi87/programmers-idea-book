@@ -1,7 +1,7 @@
 'use strict';
 
 var expect = require('chai').expect;
-var reverse = require('../reverse').reverse;
+var reverse = require('../../reverse').reverse;
 
 describe('Reverse', ()=>{
 	it('handles empty input', ()=>{

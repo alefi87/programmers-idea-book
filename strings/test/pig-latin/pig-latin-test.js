@@ -1,7 +1,7 @@
 'use strict';
 
 var expect = require('chai').expect;
-var pig = require('../pig-latin');
+var pig = require('../../pig-latin');
 
 describe('Pig Latin', ()=>{
 	it('handles empty input', ()=>{

@@ -1,9 +1,9 @@
 'use strict';
 
 var expect = require('chai').expect;
-var countVowels = require('../count-vowels').countVowels;
+var countVowels = require('../../count-vowels').countVowels;
 
-describe('Vowel counter', ()=>{
+describe('Count vowels', ()=>{
 	it('handles empty input', ()=>{
 		expect(countVowels('')).to.be.empty;
 	});
