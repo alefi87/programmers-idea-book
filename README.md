@@ -4,7 +4,7 @@ List of projects from [The Programmers Idea Book](http://www.coderslexicon.com/d
 ##Numbers
 - [ ] Add/Subtract/Multiply/DivideFractions
 - [ ] Alarm Clock
-- [ ] Binary to Decimal and Back Converter
+- [x] Binary to Decimal and Back Converter
 - [ ] Calculator
 - [x] Change Return Program
 - [ ] Credit Card Validator
