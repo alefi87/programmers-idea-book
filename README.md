@@ -6,7 +6,7 @@ List of projects from [The Programmers Idea Book](http://www.coderslexicon.com/d
 - [ ] Alarm Clock
 - [ ] Binary to Decimal and Back Converter
 - [ ] Calculator
-- [ ] Change Return Program
+- [x] Change Return Program
 - [ ] Credit Card Validator
 - [ ] Decimal to Roman Numerals
 - [ ] Dijkstra’s Algorithm
