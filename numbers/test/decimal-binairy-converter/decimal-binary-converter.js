@@ -1,8 +1,8 @@
 'use strict';
 
 var expect = require('chai').expect;
-var toBinary = require('../../decimal-binary-converter').toBinary;
-var toDecimal = require('../../decimal-binary-converter').toDecimal;
+var toBinary = require('../../decimal-binary-converter').dec2bin;
+var toDecimal = require('../../decimal-binary-converter').bin2dec;
 
 describe('Binary-Decimal Converter', ()=>{
 	it('handles invalid input', ()=>{

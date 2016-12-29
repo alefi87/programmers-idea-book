@@ -1,6 +1,6 @@
 'use strict';
 
-exports.toBinary = (decimal)=>{
+exports.dec2bin = (decimal)=>{
 	if (decimal !== parseInt(decimal))
 		return undefined;
 
@@ -14,7 +14,7 @@ exports.toBinary = (decimal)=>{
 	return result;
 };
 
-exports.toDecimal = (binary)=>{
+exports.bin2dec = (binary)=>{
 	if (typeof binary !== 'string' || binary.match(/[^10]/))
 		return undefined;
 
