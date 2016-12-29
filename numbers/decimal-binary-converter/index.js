@@ -1,7 +1,7 @@
 'use strict';
 
 exports.dec2bin = (decimal)=>{
-	if (decimal !== parseInt(decimal))
+	if (decimal !== parseInt(decimal) || decimal !== Math.abs(decimal))
 		return undefined;
 
 	let result = '';

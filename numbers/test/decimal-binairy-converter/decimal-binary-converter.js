@@ -7,8 +7,9 @@ var toDecimal = require('../../decimal-binary-converter').bin2dec;
 describe('Binary-Decimal Converter', ()=>{
 	it('handles invalid input', ()=>{
 		expect(toBinary()).to.not.exist;
-		expect(toDecimal()).to.not.exist;
 		expect(toBinary('string')).to.not.exist;
+		expect(toDecimal()).to.not.exist;
+		expect(toDecimal(-2)).to.not.exist;
 		expect(toDecimal('string')).to.not.exist;
 		expect(toDecimal('112001')).to.not.exist;
 	});
@@ -19,5 +20,6 @@ describe('Binary-Decimal Converter', ()=>{
 	});
 	it('converts to decimal', ()=>{
 		expect(toDecimal('100')).to.be.equal(4);
+		expect(toDecimal('100000000010111101')).to.be.equal(131261);
 	});
 });
