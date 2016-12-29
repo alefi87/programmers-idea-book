@@ -6,11 +6,10 @@ exports.toBinary = (decimal)=>{
 
 	let result = '';
 	while(decimal > 1){
-		result += (decimal%2).toString();
+		result = (decimal%2).toString().concat(result);
 		decimal = Math.floor(decimal/2);
 	}
-	result += decimal.toString();
-	result = result.split('').reverse().join('');
+	result = decimal.toString().concat(result);
 
 	return result;
 };
@@ -19,12 +18,9 @@ exports.toDecimal = (binary)=>{
 	if (typeof binary !== 'string' || binary.match(/[^10]/))
 		return undefined;
 
-	let result = 0;
-	binary = binary.split('');
 	let len = binary.length;
-	for(let i=0; i < len; i++){
-		result += Math.pow(2, i) * parseInt(binary[len-i-1]);
-	}
-
-	return result;
+	return binary.split('').reduce((acc, val, idx)=>{
+		// left to right reduce, therefore value should be taken starting from right in binary string
+		return acc += Math.pow(2, idx) * parseInt(binary[len-idx-1]);
+	}, 0);
 };
