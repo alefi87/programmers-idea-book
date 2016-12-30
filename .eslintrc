@@ -1,0 +1,17 @@
+{
+  "extends": "eslint-config-airbnb",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "script",
+  },
+  "env": {
+    "node": true,
+    "es6": true,
+    "mocha": true
+  },
+  "rules": {
+    "no-plusplus": 0,
+    "strict": ["error", "safe"],
+    "import/no-extraneous-dependencies": ["error", {devDependencies: ["**/test/**"]}],
+  }
+}
