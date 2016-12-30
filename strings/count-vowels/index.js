@@ -1,21 +1,23 @@
 'use strict';
 
-exports.countVowels = (text)=>{
-	let result = text.toLowerCase().split(/[^aeoiu]/i).reduce((acc, curr)=>{
-		if (curr == '')
-			return acc;
+exports.countVowels = (text) => {
+  const result = text.toLowerCase().split(/[^aeoiu]/i).reduce((acc, curr) => {
+    if (curr === '') {
+      return acc;
+    }
+    const accumulated = acc;
+    // handle multiple sequencial vowels
+    curr.split('').map((vowel) => {
+      if (!acc[vowel]) {
+        accumulated[vowel] = 1;
+      } else {
+        accumulated[vowel] += 1;
+      }
+      return true;
+    });
 
-		// handle multiple sequencial vowels
-		curr = curr.split('');
-		curr.map((vowel)=>{
-			if (!acc[vowel])
-				acc[vowel] = 1;
-			else
-				acc[vowel] += 1;
-		})
+    return accumulated;
+  }, {});
 
-		return acc;
-	}, {});
-
-	return result;
+  return result;
 };
