@@ -1,5 +1,3 @@
 'use strict';
 
-exports.reverse = (str)=>{
-	return str.split('').reverse().join('');
-};
+exports.reverse = str => str.split('').reverse().join('');
