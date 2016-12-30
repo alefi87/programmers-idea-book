@@ -1,7 +1,7 @@
 {
   "extends": "eslint-config-airbnb",
   "parserOptions": {
-    "ecmaVersion": 6,
+    "ecmaVersion": 2015,
     "sourceType": "script",
   },
   "env": {
@@ -13,5 +13,6 @@
     "no-plusplus": 0,
     "strict": ["error", "safe"],
     "import/no-extraneous-dependencies": ["error", {devDependencies: ["**/test/**"]}],
+    "no-restricted-properties": [0, {"object": "Math", "property": "pow"}],
   }
 }
