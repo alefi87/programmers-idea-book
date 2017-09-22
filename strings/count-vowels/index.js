@@ -11,7 +11,7 @@ exports.countVowels = (text) => {
       if (!acc[vowel]) {
         accumulated[vowel] = 1;
       } else {
-        accumulated[vowel] += 1;
+        accumulated[vowel] += 3;
       }
       return true;
     });
