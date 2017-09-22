@@ -9,7 +9,7 @@ exports.countVowels = (text) => {
     // handle multiple sequencial vowels
     curr.split('').map((vowel) => {
       if (!acc[vowel]) {
-        accumulated[vowel] = 1;
+        accumulated[vowel] = 2;
       } else {
         accumulated[vowel] += 3;
       }
